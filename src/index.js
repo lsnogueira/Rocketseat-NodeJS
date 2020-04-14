@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
   return res.json({ message: 'Hello World' });
 });
 
-console.log(`App listen in http://localhost:${port}`);
+console.log(`App listening in http://localhost:${port}`);
 
 app.listen(port);

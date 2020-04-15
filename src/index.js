@@ -9,7 +9,7 @@ const techs = [];
 app.use(express.json());
 
 app.get('/techs', (req, res) => {
-  const { title } = request.query;
+  const { title } = req.query;
   const results = title
     ? techs.filter((tech) => tech.title.includes(title))
     : techs;
